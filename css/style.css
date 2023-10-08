@@ -1,0 +1,697 @@
+/* Box sizing reset for all elements */
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Remove default list styling for <ul> elements */
+ul {
+    margin: 0;
+    list-style: none;
+}
+
+/* Reset padding for list items */
+li {
+    padding-left: 0;
+}
+
+/* Inherit text decoration and color for links */
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+/* Global styles for the body */
+body {
+    background: #222;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Define a custom font face */
+@font-face {
+    font-family: Gayo Wine Demo;
+    src: url(/fonts/GayoWineDemoRegular.ttf);
+}
+
+/* Container styles */
+.container {
+    margin: 0 auto;
+    width: 1280px;
+    padding: 0 10px;
+    /* Fixed typo: changed , to space */
+}
+
+/* Initial header styles */
+.header {
+    position: fixed;
+}
+
+
+/* Header inner container */
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    margin-top: 30px;
+}
+
+/* Main text in the header */
+.main__text {
+    color: #DDD;
+    text-align: right;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Navigation menu */
+.menu__list {
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Menu item for home link */
+.menu__item__dedicated {
+    color: #FFF;
+    text-align: right;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-decoration-line: underline;
+    text-transform: uppercase;
+}
+
+/* Menu items for other links */
+.menu__item {
+    color: #DDD;
+    text-align: right;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+/* Video background section */
+.video__bg {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+/* Video element */
+.video__bg video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Effects overlay */
+.effects {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.60);
+}
+
+/* Video content container */
+.video__bg__content {
+    z-index: 2;
+}
+
+/* First screen title */
+.first__screen__title {
+    padding-top: 200px;
+}
+
+/* Title 1 and Title 2 styles */
+.title__1 {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Gayo Wine Demo;
+    font-size: 112px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105.6px;
+    text-transform: uppercase;
+    backdrop-filter: blur(2px);
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.title__2 {
+    color: rgba(255, 255, 255, 0.80);
+    font-family: Gayo Wine Demo;
+    font-size: 112px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 105.6px;
+    text-transform: uppercase;
+    backdrop-filter: blur(2px);
+    margin: 0;
+    margin-left: 147px;
+}
+
+/* First screen text */
+.first__screen__text {
+    margin: 0;
+    padding-top: 210px;
+    width: 413px;
+}
+
+/* Basic text style */
+.basic__text {
+    color: #DDD;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+/* About me section */
+.about__me {
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+/* About me marquee text */
+.about__me__marquee {
+    color: #DDD;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+/* About me inner container */
+.about__me__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    margin: 0;
+    padding-top: 80px;
+}
+
+/* About me column 1, column 3, and menu */
+.about__me__column__1,
+.about__me__column__3,
+.about__me__menu {
+    margin: 0;
+    width: 413px;
+}
+
+/* About me text 1 */
+.about__me__text__1 {
+    color: #DDD;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-bottom: 227px;
+    margin-top: 10px;
+}
+
+/* About me text 2 */
+.about__me__text__2 {
+    color: #DDD;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+}
+
+/* About me column 2 */
+.about__me__column__2 {
+    width: 414px;
+    height: 491px;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+/* About me menu list */
+.about__me__menu__list {
+    display: flex;
+    width: 413px;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+/* About me menu item */
+.about__me__menu__item {
+    color: #FFF;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* About me menu */
+.about__me__menu {
+    margin: 0;
+}
+
+/* About me text 3 */
+.about__me__text__3 {
+    color: #DDD;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin-top: 323px;
+}
+
+/* Recent work section */
+.recent__work__title {
+    margin: 0;
+    padding-top: 80px;
+    text-align: center;
+}
+
+/* Recent work title 1 */
+.recent__work__title__1 {
+    color: #DDD;
+    font-family: Roboto;
+    font-size: 84px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Recent work subtitle */
+.recent__work__subtitle {
+    color: #DDD;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 80px;
+}
+
+/* Work item */
+.work {
+    margin: 0;
+    padding-bottom: 80px;
+}
+
+/* Work title */
+.work__title {
+    color: #DDD;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 30px;
+}
+
+/* Work subtitle */
+.work__subtitle {
+    color: #DDD;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-top: 10px;
+}
+
+/* Skills section */
+.skills__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    margin: 0;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+/* Skills title text */
+.skills__title__text {
+    color: #DDD;
+    font-family: Roboto;
+    font-size: 84px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Skills block */
+.skills__block {
+    display: flex;
+    position: sticky;
+    margin: 0;
+    padding-bottom: 100px;
+    margin: 0;
+}
+
+/* Skills text title */
+.skills__text__title {
+    color: #DDD;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin: 0;
+    padding-right: 163px;
+}
+
+/* Skills text column */
+.skills__text__column {
+    width: 522px;
+}
+
+/* Skills text subtitle */
+.skills__text__subtitle {
+    color: #DDD;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+/* Skills text column 3 */
+.skills__text__column__3 {
+    margin: 0;
+    padding-left: 182px;
+}
+
+/* Skills text title 2 */
+.skills__text__title__2 {
+    color: #DDD;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-right: 74px;
+    width: 305px;
+}
+
+/* Rectangle section */
+.rectangle {
+    border-radius: 88px 88px 0px 0px;
+    background: #DDD;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    margin-top: 160px;
+}
+
+/* Rectangle top block */
+.rectangle__top__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    position: sticky;
+    margin: 0;
+    padding-top: 80px;
+    margin: 0;
+}
+
+/* Rectangle title block */
+.rectangle__title__block {
+    margin: 0;
+}
+
+/* Rectangle title */
+.rectangle__title {
+    color: #0A0A0C;
+    font-family: Roboto;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 79.99px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+/* Rectangle list */
+.rectangle__list {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 5px;
+    margin: 0;
+}
+
+/* Rectangle item */
+.rectangle__item {
+    color: #0A0A0C;
+    text-align: right;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+/* Rectangle marquee text */
+.rectangle__marquee {
+    margin: 0;
+    margin-top: 395px;
+    color: rgba(10, 10, 12, 0.80);
+    text-align: center;
+    font-family: Roboto;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    /* Start slightly below */
+    animation: fadeIn 5s ease forwards;
+    /* Use the 'fadeIn' animation for 1 second */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        /* Fade to 100% opacity */
+        transform: translateY(0);
+        /* Move to the original position */
+    }
+}
+
+
+@media screen and (max-width: 375px) {
+    /* Mobile-first styles (applies to all screen sizes) */
+
+    /* Container width and padding adjustments */
+    .container {
+        width: 100%;
+        padding: 0 20px;
+        /* Add some spacing on the sides */
+    }
+
+    /* Header adjustments for smaller screens */
+    .header__inner {
+        flex-direction: column;
+        /* Stack menu items vertically */
+        margin-top: 10px;
+        /* Reduce top margin */
+    }
+
+    /* Menu items for mobile */
+    .menu__list {
+        flex-direction: column;
+        /* Stack menu items vertically */
+        gap: 10px;
+        /* Add some spacing between menu items */
+    }
+
+    /* Video content adjustments */
+    .first__screen__title {
+        padding-top: 150px;
+        /* Adjust spacing */
+    }
+
+    .title__1,
+    .title__2 {
+        font-size: 32px;
+        /* Reduce font size for mobile */
+        margin-left: 0;
+        /* Remove margin-left for the second title */
+    }
+
+    .first__screen__text {
+        width: 100%;
+        /* Take full width */
+        text-align: center;
+        /* Center-align text */
+    }
+
+    /* About me section adjustments */
+    .about__me__marquee {
+        font-size: 40px;
+        /* Reduce font size for mobile */
+    }
+
+    .about__me__inner {
+        flex-direction: column;
+        /* Stack columns vertically */
+        padding-top: 20px;
+        /* Adjust spacing */
+    }
+
+    .about__me__text__1,
+    .about__me__text__2,
+    .about__me__column__2 {
+        width: 100%;
+        /* Take full width */
+        text-align: center;
+        /* Center-align text */
+        margin-bottom: 20px;
+        /* Add some spacing between text blocks */
+    }
+
+    /* About me menu adjustments */
+    .about__me__menu__list {
+        flex-direction: row;
+        /* Display menu items horizontally */
+        justify-content: center;
+        /* Center-align menu items */
+    }
+
+    /* Recent work section adjustments */
+    .recent__work__title {
+        padding-top: 50px;
+        /* Adjust spacing */
+    }
+
+    .recent__work__title__1 {
+        font-size: 32px;
+        /* Reduce font size for mobile */
+    }
+
+    .recent__work__subtitle {
+        font-size: 14px;
+        /* Reduce font size for mobile */
+    }
+
+    .work {
+        margin-bottom: 40px;
+        /* Add spacing between work items */
+    }
+
+    .work__title {
+        font-size: 24px;
+        /* Reduce font size for mobile */
+        padding-top: 10px;
+        /* Add spacing between title and subtitle */
+    }
+
+    /* Skills section adjustments */
+    .skills__title {
+        padding-top: 50px;
+        /* Adjust spacing */
+        padding-bottom: 50px;
+        /* Adjust spacing */
+    }
+
+    .skills__title__text {
+        font-size: 32px;
+        /* Reduce font size for mobile */
+    }
+
+    .skills__block {
+        flex-direction: column;
+        /* Stack skills blocks vertically */
+    }
+
+    .skills__text__title,
+    .skills__text__title__2 {
+        font-size: 24px;
+        /* Reduce font size for mobile */
+        margin-right: 0;
+        /* Remove right margin for the second title */
+    }
+
+    /* Rectangle section adjustments */
+    .rectangle {
+        border-radius: 0;
+        /* Remove border-radius */
+        margin-top: 0;
+        /* Remove top margin */
+    }
+
+    .rectangle__top__block {
+        flex-direction: column;
+        /* Stack rectangle top block vertically */
+        padding-top: 20px;
+        /* Adjust spacing */
+    }
+}
